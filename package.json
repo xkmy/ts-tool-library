@@ -1,0 +1,22 @@
+{
+  "name": "ts-tool-library",
+  "version": "1.0.0",
+  "description": "A ts tool set",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "utils",
+    "typescript"
+  ],
+  "author": "saas",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
+}

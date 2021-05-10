@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5", //将编译的.ts文件编译为指定标准js
+    "module": "ESNext",
+    "allowJs": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "sourceMap": false, //生成资源映射，以便于调试
+    "allowUnreachableCode": true, //允许代码中途return产生无法执行代码
+    "esModuleInterop": true, // 允许从没有设置默认导出的模块中默认导出。这并不影响代码的输出，仅为了类型检查
+    "removeComments": true, // 删除编译后的所有的注释
+    "lib": ["ES2015","DOM", "ESNext", "ES2017"],
+    "typeRoots": ["node_modules/@types"], // 定义类型定义文件的根目录
+    "outDir": "./lib", 
+    "baseUrl": "./src",
+    "strictNullChecks": true,
+    "declaration": true,
+
+    /* 额外的检查 */
+    "noUnusedParameters": false, // 有未使用的参数时，抛出错误
+    "noImplicitReturns": false, // 并不是所有函数里的代码都有返回值时，抛出错误
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src"
+  ]
+}
