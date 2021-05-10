@@ -4,7 +4,7 @@ import isBrowser from './isBrowser'
 import clearInvalidParams from './clearInvalidParams'
 import debounce from './debounce'
 import throttle from './throttle'
-import deepColne from './deepColne'
+import deepClone from './deepClone'
 import to from './to'
 import parseTo from './parseTo'
 import getUrlParams from './getUrlParams'
@@ -26,7 +26,7 @@ export {
   clearInvalidParams,
   debounce,
   throttle,
-  deepColne,
+  deepClone,
   to,
   parseTo,
   getUrlParams,
