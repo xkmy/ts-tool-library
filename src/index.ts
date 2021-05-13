@@ -1,41 +1,51 @@
+import camelize from './camelize'
+import clearInvalidParams from './clearInvalidParams'
+import copyToClipboard from './copyToClipboard'
+import deepColne from './deepColne'
+import debounce from './debounce'
+import difference from './difference'
+import formatPrice from './formatPrice'
+import getUrlParams from './getUrlParams'
+import listToTree from './listToTree'
 import isEmpty from './isEmpty'
 import isNotEmpty from './isNotEmpty'
 import isBrowser from './isBrowser'
-import clearInvalidParams from './clearInvalidParams'
-import debounce from './debounce'
-import throttle from './throttle'
-import deepClone from './deepClone'
-import to from './to'
 import parseTo from './parseTo'
-import getUrlParams from './getUrlParams'
-import formatPrice from './formatPrice'
+import isObject from './isObject'
+import isString from './isString'
 import intersection from './intersection'
-import difference from './difference'
-import copyToClipboard from './copyToClipboard'
-import camelize from './camelize'
-import underscore from './underscore'
 import isTelphone from './isTelphone'
-import uniqueArrayObject from './uniqueArrayObject'
+import regexValidate from './regexValidate'
 import transformFileToBase64 from './transformFileToBase64'
+import throttle from './throttle'
+import trim from './trim'
+import to from './to'
+import uniqueArrayObject from './uniqueArrayObject'
+import underscore from './underscore'
 
 export {
+  camelize,
+  clearInvalidParams,
+  copyToClipboard,
+  debounce,
+  deepColne,
+  difference,
+  formatPrice,
+  getUrlParams,
+  listToTree,
   isEmpty,
   isNotEmpty,
   isBrowser,
   isTelphone,
-  clearInvalidParams,
-  debounce,
   throttle,
-  deepClone,
-  to,
   parseTo,
-  getUrlParams,
-  formatPrice,
+  isObject,
+  isString,
   intersection,
-  difference,
-  copyToClipboard,
-  camelize,
-  underscore,
-  uniqueArrayObject,
+  regexValidate,
   transformFileToBase64,
+  to,
+  trim,
+  underscore,
+  uniqueArrayObject
 }

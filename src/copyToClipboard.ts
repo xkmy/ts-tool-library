@@ -1,10 +1,10 @@
 /**
  * 复制到粘贴板
- * @param value 要复制的值
+ * @param val 要复制的值
  */
-const copyToClipboard = (value: string) => {
+const copyToClipboard = (val: string): boolean => {
   const el = document.createElement('textarea')
-  el.value = value
+  el.value = val
   el.setAttribute('readonly', '')
   el.style.position = 'absolute'
   el.style.left = '-9999px'
@@ -18,7 +18,7 @@ const copyToClipboard = (value: string) => {
     document.getSelection()?.removeAllRanges()
     document.getSelection()?.addRange(selected)
   }
-  return { success, value }
+  return success
 }
 
 export default copyToClipboard
