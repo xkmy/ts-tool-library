@@ -22,9 +22,11 @@ import trim from './trim'
 import to from './to'
 import uniqueArrayObject from './uniqueArrayObject'
 import underscore from './underscore'
+import chunk from './chunk'
 
 export {
   camelize,
+  chunk,
   clearInvalidParams,
   copyToClipboard,
   debounce,
