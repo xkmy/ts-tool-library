@@ -2,7 +2,12 @@
 # yarn lockfile v1
 
 
-typescript@^4.2.3:
-  version "4.2.3"
-  resolved "http://m.local:4873/typescript/-/typescript-4.2.3.tgz#39062d8019912d43726298f09493d598048c1ce3"
-  integrity sha1-OQYtgBmRLUNyYpjwlJPVmASMHOM=
+ts-tool-library@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.nlark.com/ts-tool-library/download/ts-tool-library-1.0.0.tgz#88e0bc0be4f95c06c99c4cd48c72aa6ef71ec59a"
+  integrity sha1-iOC8C+T5XAbJnEzUjHKqbvcexZo=
+
+typescript@^4.2.4:
+  version "4.2.4"
+  resolved "https://registry.nlark.com/typescript/download/typescript-4.2.4.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftypescript%2Fdownload%2Ftypescript-4.2.4.tgz#8610b59747de028fda898a8aef0e103f156d0961"
+  integrity sha1-hhC1l0feAo/aiYqK7w4QPxVtCWE=

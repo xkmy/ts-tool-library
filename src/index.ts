@@ -1,4 +1,5 @@
 import camelize from './camelize'
+import chunk from './chunk'
 import clearInvalidParams from './clearInvalidParams'
 import copyToClipboard from './copyToClipboard'
 import deepColne from './deepColne'
@@ -6,6 +7,7 @@ import debounce from './debounce'
 import difference from './difference'
 import formatPrice from './formatPrice'
 import getUrlParams from './getUrlParams'
+import groupBy from './groupBy'
 import listToTree from './listToTree'
 import isEmpty from './isEmpty'
 import isNotEmpty from './isNotEmpty'
@@ -22,7 +24,6 @@ import trim from './trim'
 import to from './to'
 import uniqueArrayObject from './uniqueArrayObject'
 import underscore from './underscore'
-import chunk from './chunk'
 
 export {
   camelize,
@@ -34,6 +35,7 @@ export {
   difference,
   formatPrice,
   getUrlParams,
+  groupBy,
   listToTree,
   isEmpty,
   isNotEmpty,
@@ -49,5 +51,5 @@ export {
   to,
   trim,
   underscore,
-  uniqueArrayObject
+  uniqueArrayObject,
 }

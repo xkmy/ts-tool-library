@@ -11,6 +11,13 @@ import { clearInvalidParams } from 'ts-tool-library'
 console.log(camelize('my_name')) // myName
 ```
 
+### chunk (将一个大数组分割成若干个小数组)
+
+```typescript
+import { chunk } from 'ts-tool-library'
+chunk([1, 2, 3], 1) // [[1],[2],[3]]
+```
+
 ### clearInvalidParams (清除对象中无效参数,返回一个新的对象)
 
 ```typescript
@@ -70,6 +77,13 @@ const query = getUrlParams('http://url.com/page?name=jack&id=1')
 console.log(query) // { name:'jack',id:1 }
 ```
 
+### groupBy (根据数组中对象的某个属性进行分组)
+
+```typescript
+import { groupBy } from 'ts-tool-library'
+console.log(groupBy([{ name: 'xk' }, { name: 'lrx' }], 'name')) // [[{ name: 'xk' }],[{ name: 'lrx' }]]
+```
+
 ### listToTree (将列表数据转化为树结构)
 
 ```typescript
@@ -101,13 +115,6 @@ console.log(
 ```typescript
 import { isBrowser } from 'ts-tool-library'
 console.log(isBrowser())
-```
-
-### isEqual (两个对象是否相等)
-
-```typescript
-import { isEqual } from 'ts-tool-library'
-console.log(isEqual({ name: 'jack' }, { name: 'lilei' })) // false
 ```
 
 ### isObject
@@ -157,6 +164,23 @@ console.log(regexValidate('https://www.baidui.com', 'url')) // true
 console.log(regexValidate('<span>span</span>', 'htmlTags')) // true
 console.log(regexValidate('jack', 'chineseCharacter')) // false
 console.log(regexValidate('#fff', 'hexColor')) // true
+```
+
+### subject (观察者模式)
+
+```typescript
+import { Subject } from 'ts-tool-library/subject'
+
+const subject = new Subject()
+
+subject.addObserver({
+  update: () => {
+    // to set update
+  }
+})
+
+// 通知更新
+subject.notify('可传递值')
 ```
 
 ### throttle (函数节流)
