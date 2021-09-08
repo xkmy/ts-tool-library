@@ -2,7 +2,7 @@ import camelize from './camelize'
 import chunk from './chunk'
 import clearInvalidParams from './clearInvalidParams'
 import copyToClipboard from './copyToClipboard'
-import deepColne from './deepColne'
+import deepClone from './deepClone'
 import debounce from './debounce'
 import difference from './difference'
 import formatPrice from './formatPrice'
@@ -31,7 +31,7 @@ export {
   clearInvalidParams,
   copyToClipboard,
   debounce,
-  deepColne,
+  deepClone,
   difference,
   formatPrice,
   getUrlParams,

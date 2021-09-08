@@ -59,7 +59,15 @@ import { difference } from 'ts-tool-library'
 console.log(difference([1, 2, 3], [2, 3, 4])) // [1]
 ```
 
-### formatPrice (格式化价格)
+### formatDate (格式化日期)
+```typescript
+import { formatDate } from 'ts-tool-library'
+formatDate('YYYY-MM-DD HH:mm:ss', new Date()) // 格式化 date 类型 时间
+formatDate('YYYY/MM/DD HH:mm', 1623132547888)  // 格式化毫秒级时间戳
+formatDate('YYYYMMDD HHmm', 1623132547)  // 格式化秒级时间戳
+formatDate('YYYY-MM-DD', 1623132547) // 只需要年月日
+formatDate('HH:mm:ss', 1623132547) // 只需要时间秒
+```
 
 ### getElementPosition (返回元素的大小及其相对于视口的位置)
 

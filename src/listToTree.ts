@@ -1,4 +1,4 @@
-import deepClone from './deepColne'
+import deepClone from './deepClone'
 
 export interface List<T> {
   id: number
