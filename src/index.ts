@@ -5,6 +5,7 @@ import copyToClipboard from './copyToClipboard'
 import deepClone from './deepClone'
 import debounce from './debounce'
 import difference from './difference'
+import formatDate from './formatDate'
 import formatPrice from './formatPrice'
 import getUrlParams from './getUrlParams'
 import groupBy from './groupBy'
@@ -33,6 +34,7 @@ export {
   debounce,
   deepClone,
   difference,
+  formatDate,
   formatPrice,
   getUrlParams,
   groupBy,

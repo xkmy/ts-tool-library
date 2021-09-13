@@ -85,6 +85,13 @@ const query = getUrlParams('http://url.com/page?name=jack&id=1')
 console.log(query) // { name:'jack',id:1 }
 ```
 
+### formatDate (格式化日期)
+``` typescript
+import { formatDate } from 'ts-tool-library'
+formatDate(1631532591270)
+formatDate(new Date())
+```
+
 ### groupBy (根据数组中对象的某个属性进行分组)
 
 ```typescript
