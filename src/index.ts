@@ -5,6 +5,7 @@ import copyToClipboard from './copyToClipboard'
 import deepClone from './deepClone'
 import debounce from './debounce'
 import difference from './difference'
+import { EventEmitter } from './event/eventEmitter'
 import formatDate from './formatDate'
 import formatPrice from './formatPrice'
 import getUrlParams from './getUrlParams'
@@ -34,6 +35,7 @@ export {
   debounce,
   deepClone,
   difference,
+  EventEmitter,
   formatDate,
   formatPrice,
   getUrlParams,
@@ -53,5 +55,5 @@ export {
   to,
   trim,
   underscore,
-  uniqueArrayObject,
+  uniqueArrayObject
 }
