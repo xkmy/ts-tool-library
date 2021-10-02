@@ -5,6 +5,7 @@ import copyToClipboard from './copyToClipboard'
 import deepClone from './deepClone'
 import debounce from './debounce'
 import difference from './difference'
+import { EventEmitter } from './event/eventEmitter'
 import formatDate from './formatDate'
 import formatPrice from './formatPrice'
 import getFormData from './getFormData'
@@ -35,6 +36,7 @@ export {
   debounce,
   deepClone,
   difference,
+  EventEmitter,
   formatDate,
   formatPrice,
   getFormData,
@@ -55,5 +57,5 @@ export {
   to,
   trim,
   underscore,
-  uniqueArrayObject,
+  uniqueArrayObject
 }
