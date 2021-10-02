@@ -3,7 +3,7 @@ export interface EventHandler {
   once?: boolean
 }
 
-export class EventEmitter<T> {
+export default class EventEmitter<T> {
   private events: Map<string, EventHandler[]> = new Map()
 
   on(type: string, handler: (data: T) => void, once?: boolean) {

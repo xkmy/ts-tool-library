@@ -59,6 +59,23 @@ import { difference } from 'ts-tool-library'
 console.log(difference([1, 2, 3], [2, 3, 4])) // [1]
 ```
 
+### EventEmitter 发布订阅
+
+```typescript
+import EventEmitter from 'ts-tool-library
+const event = new EventEmitter()
+event.on('doSome',(v)=>{
+  // do some
+}) // 订阅
+event.emit('doSome','eat') // 发布
+event.on('doSomeOnce',(v)=>{
+  // do some
+}) // 只订阅一次
+event.off('doSome',()=>{
+  // do some
+}) // 取消订阅
+```
+
 ### formatDate (格式化日期)
 
 ```typescript
