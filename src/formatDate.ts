@@ -26,7 +26,7 @@ type Time = {
 
 const padLeft = (value: number, num = 2, fill = '0') => String(value).padStart(num, fill)
 
-const formatDate = (format: Format, date: number | string | Date): string => {
+const formatDate = (date: number | string | Date, format: Format): string => {
   let originTime = date
 
   if (typeof date === 'string' || typeof date === 'number') {

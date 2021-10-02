@@ -7,6 +7,7 @@ import debounce from './debounce'
 import difference from './difference'
 import formatDate from './formatDate'
 import formatPrice from './formatPrice'
+import getFormData from './getFormData'
 import getUrlParams from './getUrlParams'
 import groupBy from './groupBy'
 import listToTree from './listToTree'
@@ -36,6 +37,7 @@ export {
   difference,
   formatDate,
   formatPrice,
+  getFormData,
   getUrlParams,
   groupBy,
   listToTree,
