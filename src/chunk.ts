@@ -1,8 +1,8 @@
 /**
- * 
+ *
  * @param array 要分割的数组
  * @param size 每个 chunk 的大小
- * @returns 
+ * @returns
  */
 export default function chunk<T>(array: T[], size: number): T[][] {
   return array.reduce((rows: T[][], currentValue: T, index: number) => {

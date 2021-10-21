@@ -4,6 +4,7 @@ import clearInvalidParams from './clearInvalidParams'
 import copyToClipboard from './copyToClipboard'
 import deepClone from './deepClone'
 import debounce from './debounce'
+import drag from './drag/drag'
 import difference from './difference'
 import EventEmitter from './event/eventEmitter'
 import formatDate from './formatDate'
@@ -21,6 +22,7 @@ import isString from './isString'
 import intersection from './intersection'
 import isTelphone from './isTelphone'
 import regexValidate from './regexValidate'
+import task from './task/task'
 import transformFileToBase64 from './transformFileToBase64'
 import throttle from './throttle'
 import trim from './trim'
@@ -35,6 +37,7 @@ export {
   copyToClipboard,
   debounce,
   deepClone,
+  drag,
   difference,
   EventEmitter,
   formatDate,
@@ -53,6 +56,7 @@ export {
   isString,
   intersection,
   regexValidate,
+  task,
   transformFileToBase64,
   to,
   trim,

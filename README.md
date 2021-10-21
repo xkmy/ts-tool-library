@@ -52,6 +52,35 @@ const cloned = deepClone([{ name: 'jack' }])
 console.log(cloned)
 ```
 
+### drag (拖拽)
+
+1.基本用法:
+
+```typescript
+import { drag } from 'ts-tool-library'
+drag(document.querySelector('.element'))
+```
+
+2.传入配置项
+
+```typescript
+const removeListener = drag(document.querySelector('.element'), {
+  outerElement: document.querySelector('.outer-element'),
+  targetElement: document.querySelector('.target-element'),
+  onDragStart: () => {},
+  onDrag: xy => {},
+  onDragEnd: () => {}
+})
+removeListener()
+```
+
+3.移除监听
+
+```typescript
+const removeListener = drag(document.querySelector('.element'))
+removeListener()
+```
+
 ### difference (求两数组(一维)的差集集)
 
 ```typescript

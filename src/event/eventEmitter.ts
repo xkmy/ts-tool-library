@@ -28,7 +28,6 @@ export default class EventEmitter<T> {
     while (i < (this.events.get(type) || []).length) {
       const handlers: EventHandler[] = this.events.get(type) || []
       const { handler, once } = handlers[i]
-      // 如果是一次性的，则在调用前删除
       if (once) {
         handlers.splice(i--, 1)
       }
@@ -51,4 +50,3 @@ export default class EventEmitter<T> {
     )
   }
 }
- 
