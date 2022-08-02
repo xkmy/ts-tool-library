@@ -22,6 +22,7 @@ import trim from './trim'
 import to from './to'
 import underscore from './underscore'
 
+export * from 'async'
 export * from './array'
 export * from './object'
 
