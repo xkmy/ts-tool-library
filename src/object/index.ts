@@ -1,6 +1,5 @@
-import deepGet from './deepGet'
-import deepSet from './deepSet'
-import pick from './pick'
-import isObject from './isObject'
-
-export { deepGet, deepSet, pick, isObject }
+export { default as deepGet } from './deepGet'
+export { default as deepSet } from './deepSet'
+export { default as pick } from './pick'
+export { default as isObject } from './isObject'
+export { default as clearInvalidParams } from './clearInvalidParams'

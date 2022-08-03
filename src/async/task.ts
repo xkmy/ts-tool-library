@@ -1,4 +1,9 @@
-import { Task } from './types'
+export type PromiseFn<R = any> = (...params: any) => Promise<R>
+
+export interface Task<T> {
+  isDoing: boolean
+  handle: () => Promise<T>
+}
 
 export enum TaskHandleType {
   /**

@@ -5,7 +5,7 @@
  * @param [position] 检索的位置
  * @example
  */
-export function endsWith(text: string, target: string, position = text.length): boolean {
+export default function endsWith(text: string, target: string, position = text.length): boolean {
   const regSubStr = new RegExp(`${target}`, 'g')
 
   let matchedStrArr = regSubStr.exec(text)

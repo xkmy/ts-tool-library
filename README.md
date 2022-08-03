@@ -11,14 +11,16 @@ import { clearInvalidParams } from 'ts-tool-library'
 console.log(camelize('my_name')) // myName
 ```
 
-### chunk (将一个大数组分割成若干个小数组)
+### chunk
+将一个大数组分割成若干个小数组
 
 ```typescript
 import { chunk } from 'ts-tool-library'
 chunk([1, 2, 3], 1) // [[1],[2],[3]]
 ```
 
-### clearInvalidParams (清除对象中无效参数,返回一个新的对象)
+### clearInvalidParams
+清除对象中无效参数
 
 ```typescript
 import { clearInvalidParams } from 'ts-tool-library'
@@ -26,7 +28,8 @@ const _params = clearInvalidParams({ name: 'jack', age: '' })
 console.log(_params) // {name:'jack'}
 ```
 
-### copyToClipboard (复制到粘贴板)
+### copyToClipboard
+复制到粘贴板
 
 ```typescript
 import { copyToClipboard } from 'ts-tool-library'
@@ -34,7 +37,7 @@ const { success, value } = copyToClipboard('jack')
 console.log(value)
 ```
 
-### debounce (函数防抖)
+### debounce
 
 ```typescript
 import * as Util from 'ts-tool-library'
@@ -44,7 +47,8 @@ const debounced = Util.debounce(() => {
 debounced()
 ```
 
-### deepColne (深拷贝)
+### deepColne
+深拷贝
 
 ```typescript
 import { deepClone } from 'ts-tool-library'
@@ -52,7 +56,8 @@ const cloned = deepClone([{ name: 'jack' }])
 console.log(cloned)
 ```
 
-### drag (拖拽)
+### drag
+拖拽
 
 1.基本用法:
 
@@ -81,14 +86,16 @@ const removeListener = drag(document.querySelector('.element'))
 removeListener()
 ```
 
-### difference (求两数组(一维)的差集集)
+### difference
+求两数组(一维)的差集集
 
 ```typescript
 import { difference } from 'ts-tool-library'
 console.log(difference([1, 2, 3], [2, 3, 4])) // [1]
 ```
 
-### EventEmitter 发布订阅
+### EventEmitter
+发布订阅
 
 ```typescript
 import EventEmitter from 'ts-tool-library
@@ -132,7 +139,8 @@ const query = getUrlParams('http://url.com/page?name=jack&id=1')
 console.log(query) // { name:'jack',id:1 }
 ```
 
-### formatDate (格式化日期)
+### formatDate
+格式化日期
 
 ```typescript
 import { formatDate } from 'ts-tool-library'
@@ -140,7 +148,8 @@ formatDate(1631532591270)
 formatDate(new Date())
 ```
 
-### groupBy (根据数组中对象的某个属性进行分组)
+### groupBy 
+根据数组中对象的某个属性进行分组
 
 ```typescript
 import { groupBy } from 'ts-tool-library'
@@ -171,9 +180,8 @@ console.log(
 ) // [{ id: 1,parent: 0,value: 1,children: [{ id: 2, parent: 1, value: 2 }]
 ```
 
-### intersection (求两数组(一维)的交集)
-
-### isBrowser (当前是否为浏览器环境)
+### isBrowser 
+当前是否为浏览器环境
 
 ```typescript
 import { isBrowser } from 'ts-tool-library'
@@ -188,7 +196,8 @@ console.log(isObject({ name: 'jack' })) // true
 console.log(isObject(1)) // false
 ```
 
-### isEmpty (值是否为空)
+### isEmpty 
+值是否为空
 
 ```typescript
 import { isEmpty } from 'ts-tool-library'
@@ -199,7 +208,8 @@ isEmpty('') // true
 isEmpty(null) // true
 ```
 
-### isNotEmpty (值是否不为空)
+### isNotEmpty
+值是否不为空
 
 ```typescript
 import { isNotEmpty } from 'ts-tool-library'
@@ -208,14 +218,16 @@ isNotEmpty({ department: 'jack' }) // true
 isNotEmpty({}) // false
 ```
 
-### parseTo (JSON 解析 并捕获会出现的异常)
+### parseTo
+JSON 解析 并捕获会出现的异常
 
 ```typescript
 import { parseTo } from 'ts-tool-library'
 const json = paseTo('{"title":"json 解析"}')
 ```
 
-### regexValidate (正则验证函数)
+### regexValidate
+正则验证函数
 
 ```typescript
 import { regexValidate } from 'ts-tool-library'
@@ -229,7 +241,8 @@ console.log(regexValidate('jack', 'chineseCharacter')) // false
 console.log(regexValidate('#fff', 'hexColor')) // true
 ```
 
-### subject (观察者模式)
+### subject
+观察者模式
 
 ```typescript
 import { Subject } from 'ts-tool-library/subject'
@@ -246,7 +259,8 @@ subject.addObserver({
 subject.notify('可传递值')
 ```
 
-### throttle (函数节流)
+### throttle
+函数节流
 
 ```typescript
 import { throttle } from 'ts-tool-library'
@@ -256,7 +270,8 @@ const throttled = throttle(() => {
 throttled()
 ```
 
-### to (异步函数异常捕获语法简写,一般用于 catch 接口请求错误)
+### to
+异步函数异常捕获语法简写,一般用于 catch 接口请求错误
 
 ```typescript
 import { to } from 'ts-tool-library'
@@ -265,7 +280,8 @@ const [res, err] = await to(request(xx))
 if (res) xx
 ```
 
-### transformFileToBase64 (将 file 转换为 base64)
+### transformFileToBase64
+将 file 转换为 base64
 
 ```typescript
 import { transform } from 'ts-tool-library'
@@ -275,7 +291,8 @@ const transform = async () => {
 }
 ```
 
-### trim 去除字符串首尾的指定字符, 默认为空格(whitespace)
+### trim
+去除字符串首尾的指定字符, 默认为空格(whitespace)
 
 ```typescript
 import { trim } from 'ts-tool-library'
@@ -284,7 +301,8 @@ console.log(trim(' 1 ')) // '1'
 console.log(trim('3123', '3')) // '12'
 ```
 
-### underscore (驼峰转下划线命名)
+### underscore
+驼峰转下划线命名
 
 ```typescript
 import { underscore } from 'ts-tool-library'
@@ -292,10 +310,46 @@ import { underscore } from 'ts-tool-library'
 console.log(underscore('myName')) // my_name
 ```
 
-### uniqueArrayObject (去除数组中重复的对象)
+### uniqueArrayObject 
+去除数组中重复的对象
 
 ```typescript
 import { uniqueArrayObject } from 'ts-tool-library'
 
 const ary = uniqueArrayObject([{ id: 1 }, { id: 1, department: 'jack' }], 'id') // [{id:1}]
+```
+
+### concurrencyControl
+
+并发控制
+
+```typescript
+import { concurrencyControl } from 'ts-tool-library'
+
+// Your request
+const request1 = async () => {
+  const res = await axios.get(
+    'https://www.fastmock.site/mock/f3f8fe09e165b17807903866ca16a752/mock/user'
+  )
+  return res.data
+}
+
+const request2 = async () => {
+  const res = await axios.get(
+    'https://www.fastmock.site/mock/f3f8fe09e165b17807903866ca16a752/mock/fruit'
+  )
+  return res.data
+}
+
+const request3 = async () => {
+  const res = await axios.get(
+    'https://www.fastmock.site/mock/f3f8fe09e165b17807903866ca16a752/mock/animal'
+  )
+  return res.data
+}
+
+// 同时最多只会发送 2 个请求
+const res = await concurrencyControl([request1, request2, request3], 2)
+// res 里同时包括成功和失败的响应(按顺序返回)
+console.log('res', res)
 ```
